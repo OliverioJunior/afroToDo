@@ -16,7 +16,7 @@ export const GlobalStyled = createGlobalStyle`
       font-size: 87.5%;
     }
   }
-  #root {
+  :root {
     --blue-100:#C8E6D2;
     --red-400:#FE5F55;
     --green-300: #70AE6E;
@@ -29,20 +29,21 @@ export const GlobalStyled = createGlobalStyle`
     --white: #FFFFFF;
   }
   body {
-    background-color:var(---gray-200);
+    background-color:var(--gray-200);
     -webkit-font-smoothing: antialiased;
-  }
-  #root {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 2.5rem 1.25rem;
   }
   button {
     cursor:pointer;
   }
+  #root{
+    min-height: 100vh;
+  }
   a {
     color: initial;
     text-decoration:none;
+  }
+  input {
+
   }
 
 `;
