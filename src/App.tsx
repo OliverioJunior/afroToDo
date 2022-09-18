@@ -7,6 +7,7 @@ import { Header } from './components/Header';
 import { Input } from './components/Input';
 import { InputCheck } from './components/InputCheck';
 import { Main } from './components/Main';
+import { TaskDescription } from './components/TaskDescription';
 import { Title } from './components/Title';
 
 function App() {
@@ -29,7 +30,8 @@ function App() {
           <ContainerTitleTaks></ContainerTitleTaks>
         </ContainerTaks>
         <CardTaks>
-          <InputCheck placeholder={''} type={'checkbox'} />
+          <InputCheck type={'checkbox'} />
+          <TaskDescription paragraph="Coisas aqui" />
         </CardTaks>
       </Main>
     </>

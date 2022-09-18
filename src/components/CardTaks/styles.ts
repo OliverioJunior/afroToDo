@@ -7,6 +7,6 @@ export const Container = styled.div`
   background: var(--white);
   border-radius: 8px;
   margin-top: 1rem;
-  align-items: center;
-  justify-content: flex-start;
+  padding: 1rem 1rem 0 1rem;
+  align-items: flex-start;
 `;

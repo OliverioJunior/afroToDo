@@ -1,4 +1,4 @@
 export type InputTypes = {
-  placeholder: string;
+  placeholder?: string;
   type: string;
 };

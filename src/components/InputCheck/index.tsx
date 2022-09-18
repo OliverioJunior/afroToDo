@@ -2,10 +2,7 @@ import { InputTypes } from '../../@types/InputTypes';
 import { ContainerInput, ContainerLabel } from './styles';
 import { useRef, useEffect } from 'react';
 
-export const InputCheck: React.FC<InputTypes> = ({
-  placeholder,
-  type,
-}: InputTypes) => {
+export const InputCheck: React.FC<InputTypes> = ({ type }: InputTypes) => {
   const divRef = useRef<HTMLDivElement>(null) ?? false;
   const inputRef = useRef<HTMLInputElement>(null) ?? false;
   const Styled = (
@@ -30,8 +27,8 @@ export const InputCheck: React.FC<InputTypes> = ({
   }, [divRef, inputRef]);
   return (
     <ContainerLabel>
-      <ContainerInput ref={inputRef} type={type} placeholder={placeholder} />
-      <div ref={divRef}></div>
+      <ContainerInput ref={inputRef} type={type} />
+      <div ref={divRef}>✔</div>
     </ContainerLabel>
   );
 };
