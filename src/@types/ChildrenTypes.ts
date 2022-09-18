@@ -1,5 +1,5 @@
 import { ReactElement } from 'react';
 
 export type ChildrenTypes = {
-  children: ReactElement;
+  children: ReactElement | ReactElement[];
 };

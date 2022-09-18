@@ -1,8 +1,6 @@
-import { ReactElement } from 'react';
+import { ChildrenTypes } from '../../@types/ChildrenTypes';
 import { ContainerMain } from './styles';
-type HeaderTypes = {
-  children: ReactElement;
-};
-export const Main: React.FC<HeaderTypes> = ({ children }: HeaderTypes) => {
+
+export const Main: React.FC<ChildrenTypes> = ({ children }: ChildrenTypes) => {
   return <ContainerMain>{children}</ContainerMain>;
 };
