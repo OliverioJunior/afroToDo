@@ -1,4 +1,5 @@
 import { CardTaks } from './components/CardTaks';
+import { ContainerButton } from './components/ContainerButton';
 import { ContainerInputDate } from './components/ContainerInputDate';
 import { ContainerInputs } from './components/ContainerInputs';
 import { ContainerTaks } from './components/ContainerTaks';
@@ -32,6 +33,10 @@ function App() {
         <CardTaks>
           <InputCheck type={'checkbox'} />
           <TaskDescription paragraph="Coisas aqui" />
+          <ContainerButton>
+            <button>editar</button>
+            <button>deletar</button>
+          </ContainerButton>
         </CardTaks>
       </Main>
     </>
