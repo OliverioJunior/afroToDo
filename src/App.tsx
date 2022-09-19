@@ -10,6 +10,10 @@ import { InputCheck } from './components/InputCheck';
 import { Main } from './components/Main';
 import { TaskDescription } from './components/TaskDescription';
 import { Title } from './components/Title';
+import { EDIT, TRASH } from './assets/svg.js';
+import { ButtonEdit } from './components/ButtonEdit';
+import { ButtonTrash } from './components/ButtonTrash';
+import { ContainerCardTaks } from './components/ContainerCardTaks';
 
 function App() {
   return (
@@ -31,12 +35,15 @@ function App() {
           <ContainerTitleTaks></ContainerTitleTaks>
         </ContainerTaks>
         <CardTaks>
-          <InputCheck type={'checkbox'} />
-          <TaskDescription paragraph="Coisas aqui" />
-          <ContainerButton>
-            <button>editar</button>
-            <button>deletar</button>
-          </ContainerButton>
+          <ContainerCardTaks>
+            <InputCheck type={'checkbox'} />
+            <TaskDescription paragraph="Coisas aqui" />
+            <ContainerButton>
+              <ButtonEdit>{EDIT}</ButtonEdit>
+              <ButtonTrash>{TRASH}</ButtonTrash>
+            </ContainerButton>
+          </ContainerCardTaks>
+          <div>opa</div>
         </CardTaks>
       </Main>
     </>
