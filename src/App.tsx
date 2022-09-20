@@ -10,11 +10,12 @@ import { InputCheck } from './components/InputCheck';
 import { Main } from './components/Main';
 import { TaskDescription } from './components/TaskDescription';
 import { Title } from './components/Title';
-import { EDIT, TRASH } from './assets/svg.js';
+import { DATE, DATECHECK, EDIT, TRASH } from './assets/svg.js';
 import { ButtonEdit } from './components/ButtonEdit';
 import { ButtonTrash } from './components/ButtonTrash';
 import { ContainerCardTaks } from './components/ContainerCardTaks';
-
+import { ContainerCardDate } from './components/ContainerCardDate';
+import { DateTask } from './components/DateTask';
 function App() {
   return (
     <>
@@ -43,7 +44,12 @@ function App() {
               <ButtonTrash>{TRASH}</ButtonTrash>
             </ContainerButton>
           </ContainerCardTaks>
-          <div>opa</div>
+          <ContainerCardTaks>
+            <ContainerCardDate>
+              <DateTask task={'até 24/09/2022'} icon={DATE} />
+              <DateTask task={'até 24/09/2022'} icon={DATECHECK} />
+            </ContainerCardDate>
+          </ContainerCardTaks>
         </CardTaks>
       </Main>
     </>
