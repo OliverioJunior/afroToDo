@@ -7,12 +7,6 @@ export const Container = styled.button`
   border: none;
   border-radius: 8px;
   svg {
-    fill: var(--gray-700);
     padding: 0.625rem;
-  }
-  &:hover {
-    svg {
-      fill: var(--green-300);
-    }
   }
 `;

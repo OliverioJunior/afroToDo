@@ -11,8 +11,7 @@ import { Main } from './components/Main';
 import { TaskDescription } from './components/TaskDescription';
 import { Title } from './components/Title';
 import { DATE, DATECHECK, EDIT, TRASH } from './assets/svg.js';
-import { ButtonEdit } from './components/ButtonEdit';
-import { ButtonTrash } from './components/ButtonTrash';
+import { ButtonTask } from './components/ButtonTask';
 import { ContainerCardTaks } from './components/ContainerCardTaks';
 import { ContainerCardDate } from './components/ContainerCardDate';
 import { DateTask } from './components/DateTask';
@@ -40,8 +39,8 @@ function App() {
             <InputCheck type={'checkbox'} />
             <TaskDescription paragraph="Coisas aqui" />
             <ContainerButton>
-              <ButtonEdit>{EDIT}</ButtonEdit>
-              <ButtonTrash>{TRASH}</ButtonTrash>
+              <ButtonTask>{EDIT}</ButtonTask>
+              <ButtonTask>{TRASH}</ButtonTask>
             </ContainerButton>
           </ContainerCardTaks>
           <ContainerCardTaks>

@@ -9,4 +9,8 @@ export const Container = styled.div`
   div {
     display: flex;
   }
+  svg {
+    fill: var(--gray-700);
+    padding-left: 1.164rem;
+  }
 `;
